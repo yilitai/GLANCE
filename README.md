@@ -23,7 +23,7 @@ GLANCE incorporates a within-batch local manifold constraint to preserve biologi
 - **Preservation of biological structure:** Maintain local relationships and the distinctness of rare cell populations during integration.
 - **Consensus representation:** Combine independently trained models using Procrustes alignment.
 - **Protein-level interpretation:** Compute abundance scores as exceedance probabilities reflecting relative protein abundance levels within the overall population.
-- **Downstream analysis:** Support cell clustering, protein correlation analysis, and spatial structure identification in conjunction with downstream tools.
+- **Downstream analysis:** Support cell clustering, protein correlation module discovery, and spatial niche identification in conjunction with downstream tools.
 
 ## Installation
 
