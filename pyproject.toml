@@ -1,0 +1,49 @@
+[build-system]
+requires = ["setuptools>=77.0.3"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "glancevae"
+version = "0.1.0"
+description = "A probabilistic framework for single-cell and spatial proteomics integration"
+readme = "README.md"
+requires-python = ">=3.10"
+
+license = "Apache-2.0"
+license-files = ["LICENSE"]
+
+keywords = [
+    "proteomics",
+    "single-cell proteomics",
+    "spatial proteomics",
+    "batch integration",
+    "variational autoencoder",
+]
+
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Operating System :: OS Independent",
+    "Intended Audience :: Science/Research",
+    "Topic :: Scientific/Engineering :: Bio-Informatics",
+]
+
+dependencies = [
+    "anndata==0.11.4",
+    "joblib==1.5.2",
+    "numpy==2.1.2",
+    "pandas==2.3.3",
+    "scipy==1.15.3",
+    "torch==2.8.0",
+    "tqdm==4.67.1",
+]
+
+[project.optional-dependencies]
+tutorials = [
+    "scanpy==1.11.5",
+    "ipykernel==7.3.0",
+]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+include = ["glancevae", "glancevae.*"]
+namespaces = false
