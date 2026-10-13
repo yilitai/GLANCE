@@ -1,0 +1,16 @@
+/* MAPS-inspired Furo controls and tutorial cards. */
+.content-icon-container { position: relative; z-index: 1; }
+.sidebar-logo-container { padding: 1rem 0; }
+.sidebar-logo { width: 100%; height: auto; }
+body[data-theme="dark"] .sidebar-logo { background: #fff; border-radius: 6px; padding: 0.5rem; box-sizing: border-box; }
+@media (prefers-color-scheme: dark) {
+  body:not([data-theme="light"]) .sidebar-logo { background: #fff; border-radius: 6px; padding: 0.5rem; box-sizing: border-box; }
+}
+.glance-tagline { color: var(--color-foreground-secondary); font-size: 1.1rem; line-height: 1.6; }
+.glance-tutorial-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1.25rem; margin: 1.5rem 0; }
+.glance-tutorial-card { display: flex; flex-direction: column; gap: 0.75rem; padding: 1.5rem; border: 1px solid var(--color-background-border); border-radius: 8px; background: var(--color-background-primary); text-decoration: none; transition: transform 120ms ease, box-shadow 120ms ease; }
+.glance-tutorial-card:hover { transform: translateY(-2px); border-color: var(--color-brand-primary); box-shadow: 0 8px 24px rgba(0,0,0,0.10); text-decoration: none; }
+.glance-tutorial-card .card-number { color: var(--color-foreground-muted); font-size: 0.85rem; }
+.glance-tutorial-card .card-title { color: var(--color-brand-content); font-size: 1.1rem; font-weight: 600; line-height: 1.4; }
+.glance-tutorial-card .card-description { color: var(--color-foreground-secondary); line-height: 1.6; }
+@media (max-width: 560px) { .glance-tutorial-grid { grid-template-columns: 1fr; } }
