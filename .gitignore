@@ -1,0 +1,6 @@
+__pycache__/
+*.py[cod]
+docs/_build/
+docs/build/
+**/.ipynb_checkpoints/
+*.orig
