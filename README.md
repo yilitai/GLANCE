@@ -34,7 +34,13 @@ conda create -n glancevae python=3.10.19 -y
 conda activate glancevae
 ```
 
-Install GLANCE directly from GitHub:
+**GPU support.** If you plan to use GPU acceleration, install the appropriate CUDA-enabled version of [PyTorch](https://pytorch.org/get-started/locally/) before installing GLANCE. For example, for CUDA 12.6:
+
+```bash
+pip install torch==2.8.0 --index-url https://download.pytorch.org/whl/cu126
+```
+
+**Install GLANCE.** Install GLANCE directly from GitHub:
 
 ```bash
 pip install "glancevae @ git+https://github.com/yilitai/GLANCE.git"
@@ -47,8 +53,6 @@ pip install "glancevae[tutorials] @ git+https://github.com/yilitai/GLANCE.git"
 ```
 
 These commands require Git to be installed.
-
-**GPU support.** If you plan to train GLANCE on an NVIDIA GPU, install the appropriate CUDA-enabled version of [PyTorch](https://pytorch.org/get-started/locally/) before installing GLANCE. CPU execution is also supported.
 
 ## Tutorials
 
